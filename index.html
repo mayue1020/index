@@ -4,25 +4,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>index_mobile</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript">
-		function search(){
-			var a = document.getElementById("search");
-			var b = a.value;
-			window.location.href='https://www.baidu.com/s?ie=UTF-8&wd='+b;			
-		}
-	</script>
 	<script type="text/javascript" src="js/js.js"></script>
 </head>
 <body background="img/1.jpg" onfocus="loseOpacity()">
 
-<div id="baidu-search">
-	<div  class="textput" >
-		<input type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="这里输入文字" size="22" value="" id="search" style="">
+	<div id="baidu-search">
+		<div  class="textput" >
+			<input type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="这里输入文字" value="" id="search" style="">
+		</div>
+		<div id="button">
+			<button id="search-button" onclick="search()">百度一下</button>
+		</div>
 	</div>
-	<div id="button">
-		<button id="search-button" onclick="search()">百度一下</button>
-	</div>
-</div>
-
 </body>
 </html>
