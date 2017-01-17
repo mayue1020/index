@@ -4,16 +4,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>index_mobile</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript"> window.onload=autoChangebg();</script>
 </head>
-<body background="img/1.jpg" onfocus="loseOpacity()">
+<body id="body" background="img/1.jpg" onfocus="loseOpacity()">
 
 	<div id="baidu-search">
-		<div  class="textput" >
-			<input type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="这里输入文字" value="" id="search" style="">
+		<div  >
+			<input  class="textput" type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="  Hello World" value="" id="search" style="">
 		</div>
-		<div id="button">
-			<button id="search-button" onclick="search()">百度一下</button>
+		<div>
+			<button class="button" id="search-button" onclick="search()">百度一下</button> 
+		</div>
+		<div>
+			<button class="button" onclick="autoChangebg()">切换背景</button> 
 		</div>
 	</div>
 </body>
