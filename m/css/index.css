@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+/*align-items: center;*/
+    background-size: 100%;
+
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    outline:none;
+
+
+
+}
+
+.textput{
+
+	border:0.5px solid;
+	border-radius:8px;
+	height: 23px;
+	outline-width: 0px;
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+#baidu-search{
+	margin-top: 90%;
+}
+
+.button{
+	width: 70px;
+	background-color: white;
+	margin-top: 10%;
+	border:0.5px solid;
+	border-radius:7px;
+	font-size:12px;
+	/*text-align: start;*/
+}
+
+#baidu-search{
+
+	opacity: 0.5;
+}
+
+

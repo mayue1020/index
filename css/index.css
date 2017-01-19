@@ -1,46 +1,157 @@
-body {
+<style>
+.inner > .add{
+    display:none;position:absolute;top:-1000000px;visibility:hidden
+    }
+.fdad,.adsbygoogle{
+    display:none;position:absolute;top:-1000000px;visibility:hidden
+    }
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*禁止网页文字被选择*/
+
+    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',tahoma,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+    /*字体*/
+
+
+}
+
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}/*隐藏链接下划线*/
+
+
+
+.haed{
+
+}
+
+#head-bar{
+
+    top:0%;
+    width: 100%;
+    height: 40px;
+    color:rgb(102, 102, 102);
+    background-color: #48525e;
+    position:relative;
+    top:0%;
+    opacity:0.8;
+}
+
+
+
+.row
+{
+	width:1040px;height:160px;
+}
+.yaBlack
+{
+	font-family:微软雅黑;
+
+} 
+.gray
+{
+    font-weight: bold;
+    color: rgb(102, 102, 102);
     text-align: center;
-/*align-items: center;*/
-    background-size: 100%;
+    background-color:white;
+    opacity:0.8;
+    border-radius: 5px;
+}
 
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    outline:none;
 
+.grayGround
+{
+	background-color: #f6f6f6;
+
+}
+.white
+{
+	color:white;
+}
+
+.shadow
+{
+	box-shadow: 0 3px 12px rgba(0,0,0,.2);
+}
+
+.grayBox
+{
+    width:240px; height:120px; 
+    opacity:0.9; 
+	border-radius: 5px;				/*圆角*/
+	background-color: #f6f6f6;
+	box-shadow: 0px 3px 12px rgba(0,0,0,.2);/*阴影*/
+}
+
+.grayBox:hover{
+    opacity:0.7;                  /*透明度*/
+    box-shadow: 0px 3px 12px gray;
+}
+
+
+.float{
+    width:260px; height:140px;float:left;
 
 
 }
 
-.textput{
+.li{
+    float:left;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 120px;
 
-	border:0.5px solid;
-	border-radius:8px;
-	height: 23px;
-	outline-width: 0px;
+}
+.li:hover{
+    background-color: rgba(40,40,40,.8);
+}
+
+.li-in{
+    margin-top: 8px;
+    text-align: center;
 }
 
 
-
-
-#baidu-search{
-	margin-top: 90%;
+.ul{
+    float:right;
+    margin-right:18px;
+    margin-top:0;
 }
 
-.button{
-	width: 70px;
-	background-color: white;
-	margin-top: 10%;
-	border:0.5px solid;
-	border-radius:7px;
-	font-size:12px;
-	/*text-align: start;*/
+#full{
+    float:right;
+    top: 40px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+/*    display: none;
+*/}
+
+iframe{
+    position: absolute;
+    float: left;
+    width: 700px;
+    height:850px;
+    margin-top: 40px;
+    background-color: white;
 }
-
-#baidu-search{
-
-	opacity: 0.5;
-}
-
-
+</style>	

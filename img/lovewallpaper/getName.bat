@@ -1,0 +1,1 @@
+dir C:\PHPnow-1.5.6\htdocs\lovewallpaper  /b >C:\PHPnow-1.5.6\htdocs\lovewallpaper\nameList.txt

